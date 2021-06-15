@@ -163,7 +163,7 @@
         android:textSize="@dimen/txtSzBt"
         app:layout_constraintBottom_toTopOf="@id/bSub"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/b6"
+        app:layout_constraintStart_toEndOf="@id/b3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.56"
         app:layout_constraintVertical_chainStyle="packed">
@@ -202,7 +202,7 @@
         android:layout_height="wrap_content"
         android:text="@string/sumTxtName"
         android:textSize="@dimen/txtSzBt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/equal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/dot"
         app:layout_constraintTop_toBottomOf="@id/bMul">
@@ -224,15 +224,15 @@
 
     <Button
         android:id="@+id/equal"
-        android:layout_width="386dp"
-        android:layout_height="78dp"
-        android:layout_marginBottom="128dp"
-        android:text="="
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equalTxt"
         android:textSize="@dimen/txtSzBt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bSum"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dot"
+        >
 
     </Button>
 
@@ -253,6 +253,7 @@
         android:text="@string/resultTxt"
         android:textSize="@dimen/txtSzBt"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editText">
