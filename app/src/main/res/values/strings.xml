@@ -20,4 +20,5 @@
     <string name="subTxtName">-</string>
     <string name="divTxtName">/</string>
     <string name="clearTxtName">C</string>
+    <string name="resultTxt">Результат</string>
 </resources>

@@ -224,8 +224,8 @@
 
     <Button
         android:id="@+id/equal"
-        android:layout_width="382dp"
-        android:layout_height="85dp"
+        android:layout_width="386dp"
+        android:layout_height="78dp"
         android:layout_marginBottom="128dp"
         android:text="="
         android:textSize="50sp"
@@ -235,6 +235,28 @@
         app:layout_constraintStart_toStartOf="parent">
 
     </Button>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="@dimen/txtSzBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultTxt"
+        android:textSize="@dimen/txtSzBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText">
+
+    </TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
