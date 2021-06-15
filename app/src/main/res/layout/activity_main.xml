@@ -54,11 +54,11 @@
         android:text="@string/_2"
         android:textSize="@dimen/txtSzBt"
         app:layout_constraintBottom_toTopOf="@id/b5"
+        app:layout_constraintEnd_toStartOf="@id/b3"
         app:layout_constraintStart_toEndOf="@id/b1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/b3"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed">
 
     </Button>
 
@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:text="@string/_8"
         android:textSize="@dimen/txtSzBt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/b0"
         app:layout_constraintEnd_toStartOf="@id/b9"
         app:layout_constraintStart_toEndOf="@id/b7"
         app:layout_constraintTop_toBottomOf="@id/b5">
@@ -95,11 +95,11 @@
         android:text="@string/_3"
         android:textSize="@dimen/txtSzBt"
         app:layout_constraintBottom_toTopOf="@id/b6"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/b2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed">
 
     </Button>
 
@@ -126,6 +126,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/b8"
         app:layout_constraintTop_toBottomOf="@id/b6">
+
+    </Button>
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textSize="@dimen/txtSzBt"
+        app:layout_constraintTop_toBottomOf="@id/b8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
     </Button>
 
