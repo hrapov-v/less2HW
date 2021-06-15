@@ -135,10 +135,10 @@
         android:layout_height="wrap_content"
         android:text="@string/_0"
         android:textSize="@dimen/txtSzBt"
-        app:layout_constraintTop_toBottomOf="@id/b8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/dot"
         app:layout_constraintStart_toEndOf="@id/bClear"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/b8">
 
     </Button>
 
@@ -148,10 +148,10 @@
         android:layout_height="wrap_content"
         android:text="@string/dot"
         android:textSize="@dimen/txtSzBt"
-        app:layout_constraintTop_toBottomOf="@id/b9"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/bSum"
         app:layout_constraintStart_toEndOf="@id/b0"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/b9">
 
     </Button>
 
@@ -202,10 +202,10 @@
         android:layout_height="wrap_content"
         android:text="@string/sumTxtName"
         android:textSize="@dimen/txtSzBt"
-        app:layout_constraintTop_toBottomOf="@id/bMul"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/dot"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/bMul">
 
     </Button>
 
@@ -215,10 +215,24 @@
         android:layout_height="wrap_content"
         android:text="@string/clearTxtName"
         android:textSize="@dimen/txtSzBt"
-        app:layout_constraintTop_toBottomOf="@id/b7"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/b0"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b7">
+
+    </Button>
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="382dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="128dp"
+        android:text="="
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent">
 
     </Button>
 
