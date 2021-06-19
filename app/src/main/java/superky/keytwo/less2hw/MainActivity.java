@@ -12,7 +12,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        EditText editText findViewById(R.id.editText);
+        initView();
+
+    }
+
+    public void initView() {
+        EditText editText = findViewById(R.id.editText);
         Button b1 = findViewById(R.id.b1);
         Button b2 = findViewById(R.id.b2);
         Button b3 = findViewById(R.id.b3);
@@ -30,5 +35,6 @@ public class MainActivity extends AppCompatActivity {
         Button mul = findViewById(R.id.bMul);
         Button sum = findViewById(R.id.bSum);
         Button dot = findViewById(R.id.dot);
+
     }
 }
