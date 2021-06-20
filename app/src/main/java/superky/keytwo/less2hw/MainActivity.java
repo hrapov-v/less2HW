@@ -2,11 +2,18 @@ package superky.keytwo.less2hw;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.Locale;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private EditText editText;
+    //private Button b1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +42,23 @@ public class MainActivity extends AppCompatActivity {
         Button mul = findViewById(R.id.bMul);
         Button sum = findViewById(R.id.bSum);
         Button dot = findViewById(R.id.dot);
-
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 3"));
+            }
+        });
+    }
+    
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.b1:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 1"));
+                break;
+            case R.id.b2:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 2"));
+                break;
+        }
     }
 }
