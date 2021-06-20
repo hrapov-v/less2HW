@@ -13,12 +13,14 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editText;
+    private Operation operation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        operation = new Operation();
     }
 
     public void initView() {
@@ -73,7 +75,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.b1:
-                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 1"));
+                operation.incrementOperation1();
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 1 '%d' раз", operation.getOperation1()));
                 break;
             case R.id.b2:
                 editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 2"));
