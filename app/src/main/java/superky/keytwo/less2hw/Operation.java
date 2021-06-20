@@ -109,6 +109,54 @@ public class Operation {
     public void incrementOperation1() {
         operation1++;
     }
+    public void incrementOperation2() {
+        operation2++;
+    }
+    public void incrementOperation3() {
+        operation3++;
+    }
+    public void incrementOperation4() {
+        operation4++;
+    }
+    public void incrementOperation5() {
+        operation5++;
+    }
+    public void incrementOperation6() {
+        operation6++;
+    }
+    public void incrementOperation7() {
+        operation7++;
+    }
+    public void incrementOperation8() {
+        operation8++;
+    }
+    public void incrementOperation9() {
+        operation9++;
+    }
+    public void incrementOperation0() {
+        operation0++;
+    }
+    public void incrementOperationDiv() {
+        operationDiv++;
+    }
+    public void incrementOperationSub() {
+        operationSub++;
+    }
+    public void incrementOperationMul() {
+        operationMul++;
+    }
+    public void incrementOperationSum() {
+        operationSum++;
+    }
+    public void incrementOperationEqual() {
+        operationEqual++;
+    }
+    public void incrementOperationDot() {
+        operationDot++;
+    }
+    public void incrementOperationClear() {
+        operationClear++;
+    }
 
 
 }
