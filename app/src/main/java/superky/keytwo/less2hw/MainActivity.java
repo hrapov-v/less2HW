@@ -12,8 +12,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText editText;
-    private Button b1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,8 +52,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+
+
     @Override
     public void onClick(View v) {
+        EditText editText = findViewById(R.id.editText);
         switch (v.getId()) {
             case R.id.b1:
                 editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 1"));
