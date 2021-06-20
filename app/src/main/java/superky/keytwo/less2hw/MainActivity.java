@@ -12,7 +12,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-
+    private EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void initView() {
-        EditText editText = findViewById(R.id.editText);
+        editText = findViewById(R.id.editText);
         Button b1 = findViewById(R.id.b1);
         Button b2 = findViewById(R.id.b2);
         Button b3 = findViewById(R.id.b3);
@@ -49,6 +49,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        });
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
+        b3.setOnClickListener(this);
+        b4.setOnClickListener(this);
+        b5.setOnClickListener(this);
+        b6.setOnClickListener(this);
+        b7.setOnClickListener(this);
+        b8.setOnClickListener(this);
+        b9.setOnClickListener(this);
+        b0.setOnClickListener(this);
+        clear.setOnClickListener(this);
+        div.setOnClickListener(this);
+        sub.setOnClickListener(this);
+        mul.setOnClickListener(this);
+        sum.setOnClickListener(this);
+        equal.setOnClickListener(this);
+        dot.setOnClickListener(this);
 
     }
 
@@ -56,13 +71,57 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        EditText editText = findViewById(R.id.editText);
         switch (v.getId()) {
             case R.id.b1:
                 editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 1"));
                 break;
             case R.id.b2:
                 editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 2"));
+                break;
+            case R.id.b3:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 3"));
+                break;
+            case R.id.b4:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 4"));
+                break;
+            case R.id.b5:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 5"));
+                break;
+            case R.id.b6:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 6"));
+                break;
+            case R.id.b7:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 7"));
+                break;
+            case R.id.b8:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 8"));
+                break;
+            case R.id.b9:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 9"));
+                break;
+            case R.id.b0:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 0"));
+                break;
+            case R.id.bClear:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку Clear"));
+                break;
+            case R.id.bDiv:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку '/'"));
+                break;
+            case R.id.equal:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку '='"));
+                break;
+            case R.id.bSub:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку '-'"));
+                break;
+            case R.id.bMul:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 'X'"));
+                break;
+            case R.id.bSum:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку '+'"));
+                break;
+            case R.id.dot:
+                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку '.'"));
                 break;
         }
     }
