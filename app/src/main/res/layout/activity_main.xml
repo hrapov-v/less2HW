@@ -238,6 +238,7 @@
 
     <EditText
         android:id="@+id/editText"
+        style="@style/CursivStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -248,12 +249,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        style="@style/BoldStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/resultTxt"
         android:textColor="@color/black"
         android:textSize="@dimen/txtSzBt"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editText">

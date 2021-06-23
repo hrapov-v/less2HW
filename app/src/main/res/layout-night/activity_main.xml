@@ -160,6 +160,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bDiv"
         android:layout_width="wrap_content"
+        style="@style/BoldStyle"
         android:layout_height="wrap_content"
         android:text="@string/divTxtName"
         android:textSize="@dimen/txtSzBt"
@@ -238,6 +239,7 @@
 
     <EditText
         android:id="@+id/editText"
+        style="@style/CursivStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -248,10 +250,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        style="@style/BoldStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/resultTxt"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/txtSzBt"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
