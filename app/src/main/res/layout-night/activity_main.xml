@@ -10,6 +10,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b1"
+        style="@style/CursivStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_1"
@@ -25,6 +26,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b4"
+        style="@style/CursivStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_4"
@@ -38,6 +40,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b7"
+        style="@style/CursivStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_7"
@@ -51,6 +54,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b2"
+        style="@style/CursivStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_2"
@@ -66,6 +70,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b5"
+        style="@style/CursivStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_5"
@@ -79,6 +84,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b8"
+        style="@style/CursivStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_8"
@@ -92,6 +98,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b3"
+        style="@style/CursivStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_3"
@@ -107,6 +114,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b6"
+        style="@style/CursivStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_6"
@@ -120,6 +128,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b9"
+        style="@style/CursivStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_9"
@@ -133,6 +142,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b0"
+        style="@style/CursivStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_0"
@@ -146,6 +156,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/dot"
+        style="@style/BoldStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dot"
@@ -159,8 +170,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bDiv"
-        android:layout_width="wrap_content"
         style="@style/BoldStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/divTxtName"
         android:textSize="@dimen/txtSzBt"
@@ -175,6 +186,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bSub"
+        style="@style/BoldStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/subTxtName"
@@ -201,6 +213,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bSum"
+        style="@style/BoldStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sumTxtName"
@@ -214,6 +227,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bClear"
+        style="@style/BoldStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/clearTxtName"
@@ -227,6 +241,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/equal"
+        style="@style/BoldStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/equalTxt"
