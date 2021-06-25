@@ -3,6 +3,7 @@ package superky.keytwo.less2hw;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         initView();
         operation = new Operation();
+
+        (findViewById(R.id.settings)).setOnClickListener(v -> {
+            this.startActivity((new Intent(this, Settings.class)));
+        });
     }
 
     public void initView() {

@@ -22,4 +22,8 @@
     <string name="clearTxtName">C</string>
     <string name="resultTxt">Результат</string>
     <string name="equalTxt">=</string>
+    <string name="settings">Настройки</string>
+    <string name="notnightThemeTxt">Светлая тема</string>
+    <string name="darkThemeTxt">Тёмная тема</string>
+    <string name="backButtonTxt">Назад</string>
 </resources>
