@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/testbackground"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
 
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/notnightTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
         android:text="@string/notnightThemeTxt"
         android:textSize="@dimen/txtSzBt">
 
@@ -23,13 +23,18 @@
         android:id="@+id/darkTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
         android:text="@string/darkThemeTxt"
         android:textSize="@dimen/txtSzBt">
 
     </com.google.android.material.button.MaterialButton>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/backButtonTxt"
+        android:textSize="@dimen/txtSzBt">
 
+    </com.google.android.material.button.MaterialButton>
 
 </LinearLayout>
