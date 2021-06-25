@@ -25,5 +25,5 @@
     <string name="settings">Настройки</string>
     <string name="notnightThemeTxt">Светлая тема</string>
     <string name="darkThemeTxt">Тёмная тема</string>
-    <string name="backButtonTxt">Назад</string>
+    <string name="backButtonTxt">Закрыть настройки</string>
 </resources>
