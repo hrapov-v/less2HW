@@ -14,7 +14,7 @@ public class Settings extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         (findViewById(R.id.backButton)).setOnClickListener(v -> {
             this.startActivity(intent);
-            onBackPressed();
+            finish();
         });
     }
 
