@@ -14,8 +14,12 @@ public class Settings extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         (findViewById(R.id.backButton)).setOnClickListener(v -> {
             this.startActivity(intent);
-            finish();
+            onDestroy();
         });
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }

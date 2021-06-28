@@ -81,11 +81,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.b1:
                 operation.incrementOperation1();
-                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 1 '%d' раз", operation.getOperation1()));
+                editText.setText(String.format(Locale.getDefault(), "1", operation.getOperation1()));
                 break;
             case R.id.b2:
                 operation.incrementOperation2();
-                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 2 '%d' раз", operation.getOperation2()));
+                editText.setText(String.format(Locale.getDefault(), "2", operation.getOperation2()));
                 break;
             case R.id.b3:
                 operation.incrementOperation3();
@@ -122,14 +122,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bClear:
                 operation.incrementOperationClear();
                 editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку 'Clear' '%d' раз", operation.getOperationClear()));
-                break;
-            case R.id.bDiv:
-                operation.incrementOperationDiv();
-                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку '/' '%d' раз", operation.getOperationDiv()));
-                break;
-            case R.id.equal:
-                operation.incrementOperationEqual();
-                editText.setText(String.format(Locale.getDefault(), "Вы нажали на кнопку '=' '%d' раз", operation.getOperationEqual()));
                 break;
             case R.id.bSub:
                 operation.incrementOperationSub();

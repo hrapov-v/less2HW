@@ -36,6 +36,8 @@ public class Operation {
         operationSum = 0;
         operationClear = 0;
         operationDot = 0;
+        operationEqual = 0;
+
     }
 
     public int getOperation1() {
