@@ -22,6 +22,15 @@ public class Settings extends AppCompatActivity {
             Intent intentCode = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/hrapov-v/less2HW"));
             startActivity(intentCode);
         });
+        (findViewById(R.id.darkTheme)).setOnClickListener(v -> {
+            setTheme(R.style.DarkTheme);
+            recreate();
+
+        });
+        (findViewById(R.id.notnightTheme)).setOnClickListener(v -> {
+            setTheme(R.style.lightTheme);
+            recreate();
+        });
     }
 
     @Override
