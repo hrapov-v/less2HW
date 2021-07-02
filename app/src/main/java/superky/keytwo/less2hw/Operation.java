@@ -18,6 +18,9 @@ public class Operation {
     private int operationEqual;
     private int operationClear;
     private int operationDot;
+    private int a;
+    private int b;
+    private int c;
 
     public Operation() {
         operation0 = 0;
@@ -37,14 +40,27 @@ public class Operation {
         operationClear = 0;
         operationDot = 0;
         operationEqual = 0;
+        a = 0;
+        b = 0;
+        c = 0;
 
     }
 
     public int getOperation1() {
+        if (a == 0) {
+            a = 1;
+        } else if (b == 0) {
+            b = 1;
+        }
         return operation1;
     }
 
     public int getOperation2() {
+        if (a == 0) {
+            a = 2;
+        } else if (b == 0) {
+            b = 2;
+        }
         return operation2;
     }
 
@@ -93,11 +109,15 @@ public class Operation {
     }
 
     public int getOperationSum() {
+        if (a != 0 || b !=0) {
+            c = a + b;
+        }
         return operationSum;
     }
 
     public int getOperationEqual() {
-        return operationEqual;
+
+        return c;
     }
 
     public int getOperationClear() {

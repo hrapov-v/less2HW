@@ -1,9 +1,11 @@
 package superky.keytwo.less2hw;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Settings extends AppCompatActivity {
@@ -15,7 +17,7 @@ public class Settings extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         (findViewById(R.id.backButton)).setOnClickListener(v -> {
             this.startActivity(intent);
-            onDestroy();
+            finish();
         });
 
         (findViewById(R.id.myCodeBtn)).setOnClickListener(v -> {
@@ -28,13 +30,10 @@ public class Settings extends AppCompatActivity {
 
         });
         (findViewById(R.id.notnightTheme)).setOnClickListener(v -> {
-            setTheme(R.style.lightTheme);
+            setTheme(R.style.NotNightTheme);
             recreate();
         });
     }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
 }
+
+
