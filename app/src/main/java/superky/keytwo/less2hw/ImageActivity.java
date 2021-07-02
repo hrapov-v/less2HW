@@ -15,8 +15,9 @@ public class ImageActivity extends AppCompatActivity {
         setContentView(R.layout.image_send);
         Intent intent = getIntent();
         String action = intent.getAction();
+        String type = intent.getType();
         ImageView imageView = findViewById(R.id.imgView);
-        if (intent.ACTION_SEND.equals(action)) {
+        if (intent.ACTION_SEND.equals(action)&&type.equals("image/*")) {
             imageView.setImageURI(intent.getParcelableExtra(intent.EXTRA_STREAM));
         }
 
